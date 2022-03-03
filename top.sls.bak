@@ -1,0 +1,24 @@
+base:
+  '*':
+    - packages
+  'roles:plexmeidaserver':
+    - match: grain
+    - plexmeidaserver
+  'roles:kubernetes_master':
+    - match: grain
+    - kubernetes
+  'roles:kubernetes_worker':
+    - match: grain
+    - kubernetes
+  'roles:sabnzbd':
+    - match: grain
+    - sabnzbd
+  'roles:radarr':
+    - match: grain
+    - radarr
+  'roles:sonarr':
+    - match: grain
+    - sonarr
+  'roles:jackett':
+    - match: grain
+    - jackett

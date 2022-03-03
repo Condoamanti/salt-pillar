@@ -8,7 +8,12 @@ packages:
 {% if grains['os'] == 'Rocky' %}
   # Common packages for Rocky
   curl: curl
+  wget: wget
+  vim-enhanced: vim-enhanced
+  htop: htop
   epel-release: epel-release
+  tree: tree
+  tar: tar
 {% endif %}
 
 
